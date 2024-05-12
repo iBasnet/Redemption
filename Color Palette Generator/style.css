@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 150vh; */
+    box-sizing: border-box;
+    background-color: #070a13;
+    color: #f1f5f9;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: "Clash Display", sans-serif;
+    font-weight: normal;
+    font-weight: 600;
+    font-size: 5rem;
+    text-align: center;
+}
+
+header {
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+main {
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.color {
+    margin: 1rem;
+    transition: 0.25s;
+}
+
+.container .color {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    padding: 0.5rem;
+    border-radius: 0rem 2rem 2rem 2rem;
+}
+
+.color:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.rect-box {
+    height: 10rem;
+    width: 10rem;
+    background-color: yellow;
+    border-radius: 0rem 2rem 2rem 2rem;
+}
+
+.hex-value {
+    font-size: 1.5rem;
+    color: #F1F5F9;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+}
+
+main button {
+    height: 3rem;
+    margin-top: 2rem;
+    display: inline-block;
+    background-color: #e11d48;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5), 0 6px 6px rgba(225, 29, 72, 0.5), 0 0 100px -10px #e11d48;
+    transition: 0.3s;
+    outline: none;
+}
+
+main button:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 3px 3px rgba(225, 29, 72, 0.5), 0 3px 3px rgba(225, 29, 72, 0.5), 0 0 100px -10px #e11d48;
+}
+
+main button span {
+    padding: 0.5em 1em;
+    color: #f1f5f9;
+    font-family: General Sans;
+    font-size: 20px;
+    font-weight: 600;
+    /* letter-spacing: -0.05em; */
+    text-decoration: none;
+}
+
+footer {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+
+
+footer a {
+    font-size: 1rem;
+    font-family: Source Code Pro, arial;
+    font-weight: 400;
+    color: #94a3b8;
+    text-decoration: none;
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 3.7rem;
+    }
+
+    .rect-box {
+        height: 8.5rem;
+        width: 8.5rem;
+    }
+
+    main {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 3.3rem;
+    }
+
+    .rect-box {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    .hex-value {
+        font-size: 1.3rem;
+    }
+
+    main {
+        margin: 0;
+    }
+}
