@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'General Sans', sans-serif;
+    font-family: 'Clash Display', sans-serif;
+}
+
+header {
+    position: relative;
+}
+
+.logo_wrapper {
+    width: 10rem;
+    height: 5rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.banner_wrapper {
+    height: 13rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.banner {
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border: 5px solid red;
+    margin: 0rem 3rem;
+    height: 25rem;
+}
+
+.user_profile {
+    max-width: 70rem;
+    height: 10rem;
+    border: 5px solid yellowgreen;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.profile_wrapper {
+    /* border: 5px solid orange; */
+    position: absolute;
+    top: -5rem;
+}
+
+.profile {
+    width: 10rem;
+    border-radius: 50%;
+    border: 0.5rem solid white;
+}
+
+.user_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 5px solid black; */
+    margin-top: -5rem;
+}
+
+.username {
+    display: flex;
+}
+
+.verify {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.08rem 0.2rem;
+}
+
+.user_info h1 {
+    font-weight: 600;
+}
+
+.user_info p {
+    font-weight: 500;
+    opacity: 75%;
+}
+
+.user_analytics {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 7rem);
+    grid-template-rows: 2rem 1.5rem;
+    place-items: center;
+}
+
+.user_analytics h1 {
+    font-weight: 600;
+}
+
+.user_analytics p {
+    font-family: "General Sans", sans-serif;
+    font-weight: 500;
+    opacity: 75%;
+}
